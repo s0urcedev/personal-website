@@ -1,0 +1,122 @@
+/* tablet and less */
+@media only screen and (max-width: 992px) {
+
+    /* header */
+
+    #header > nav > a {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    #header > nav > ul {
+        flex-basis: 100%;
+        text-align: center;
+        gap: 0;
+        margin-top: 0.5rem;
+    }
+
+    /* section and aside elements */
+
+    .section-aside, .section-aside-reversed {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .section-aside + .section-aside {
+        margin-top: 0.7rem;
+    }
+
+    .section-aside > div {
+        grid-row: 2 / 3;
+    }
+
+    .section-aside-reversed > div {
+        grid-row: 1 / 2;
+    }
+
+    .section-aside > section {
+        padding: 0.7rem;
+    }
+
+    .section-aside > div > aside {
+        border: 0;
+        border-radius: 0;
+        border-radius: 0 0 0.7rem 0.7rem;
+        border-top: 0.12rem solid var(--color-f1);
+    }
+
+    .section-aside-reversed > div > aside {
+        border: 0;
+        border-radius: 0.7rem 0.7rem 0 0;
+        border-bottom: 0.12rem solid var(--color-f1);
+    }
+
+    .section-aside > div > aside > div {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* personal photo */
+
+    #personal_photo {
+        justify-self: end;
+    }
+
+    #personal_photo > img {
+        width: auto;
+        height: 11rem;
+    }
+
+    /* see more */
+
+    .see-more, .section-aside > section > article > p.see-more {
+        margin-top: 0.5rem;
+    }
+}
+
+/* mobile and less */
+@media only screen and (max-width: 600px) {
+
+    /* general elements */
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    /* section and aside elements */
+
+    .section-aside > div > aside > div {
+        grid-template-columns: 1fr;
+        justify-self: center;
+    }
+
+    /* personal photo */
+
+    #personal_photo {
+        justify-self: center;
+    }
+
+    /* pins */
+
+    .pins {
+        grid-template-columns: 1fr;
+    }
+
+    /* grids in articles */
+
+    article .icon-text-double {
+        grid-template-columns: 1.2rem auto;
+    }
+
+    article .date-text {
+        grid-template-columns: auto;
+        gap: 0;
+    }
+
+    article .date-text > span {
+        text-align: left;
+    }
+
+    article .date-text > section + span {
+        margin-top: 0.8rem;
+    }
+}
