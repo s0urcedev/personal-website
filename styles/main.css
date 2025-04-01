@@ -180,6 +180,12 @@ h4 > a {
     height: 1.2rem;
 }
 
+.icon-text > span {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.25rem;
+}
+
 /* grid for dates and text */
 
 .date-text {

@@ -51,7 +51,7 @@
         border-bottom: 0.12rem solid var(--color-f1);
     }
 
-    .section-aside > div > aside > div {
+    .section-aside > div > aside > div.doublable {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -71,10 +71,15 @@
     .see-more, .section-aside > section > article > p.see-more {
         margin-top: 0.5rem;
     }
+
 }
 
 /* mobile and less */
 @media only screen and (max-width: 600px) {
+
+    #header > nav > ul {
+        flex-direction: column;
+    }
 
     /* general elements */
 
@@ -84,9 +89,9 @@
 
     /* section and aside elements */
 
-    .section-aside > div > aside > div {
-        grid-template-columns: 1fr;
-        justify-self: center;
+    .section-aside > div > aside > div, .section-aside > div > aside > div.doublable {
+        grid-template-columns: auto;
+        justify-content: center;
     }
 
     /* personal photo */
@@ -119,4 +124,5 @@
     article .date-text > section + span {
         margin-top: 0.8rem;
     }
+
 }
