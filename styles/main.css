@@ -142,11 +142,6 @@ h4 > a {
     padding: 1rem;
 }
 
-.section-aside > section > article > p {
-    text-align: justify;
-    hyphens: auto;
-}
-
 /* personal photo */
 
 #personal_photo {
@@ -240,6 +235,12 @@ h4 > a {
 }
 
 /* overwrite rules for special versions of objects */
+
+.section-aside > section > article > p,
+.date-text > section > p {
+    text-align: justify;
+    hyphens: auto;
+}
 
 .see-more, .section-aside > section > article > p.see-more {
     font-style: italic;
