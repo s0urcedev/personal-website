@@ -77,6 +77,8 @@
 /* mobile and less */
 @media only screen and (max-width: 600px) {
 
+    /* header */
+
     #header > nav > ul {
         flex-direction: column;
     }
